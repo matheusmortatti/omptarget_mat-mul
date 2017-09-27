@@ -15,7 +15,7 @@ include_directories("${PROJECT_SOURCE_DIR}")
 
 add_library(mat-mul-lib mat-mul.c)
 
-set(CMAKE_C_FLAGS "-fopenmp -fopenmp-targets=x86_64-unknown-linux-gnu")
+set(CMAKE_C_FLAGS "-fopenmp -fopenmp-targets=nvptx64-nvidia-cuda") #-fopenmp-targets=x86_64-unknown-linux-gnu")
 
 
 add_executable(main ${PROJECT_SOURCE_DIR}/main.c)
